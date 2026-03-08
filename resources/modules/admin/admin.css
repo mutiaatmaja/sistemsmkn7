@@ -1,0 +1,62 @@
+@import '../../css/app.css';
+
+@theme {
+    --font-display: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    --color-primary: #ec5b13;
+    --color-secondary: #1e293b;
+    --color-background-light: #f8f6f6;
+    --color-background-dark: #221610;
+}
+
+.sidebar-scroll::-webkit-scrollbar {
+    width: 4px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb {
+    background: #e2e8f0;
+    border-radius: 10px;
+}
+
+@media (min-width: 1024px) {
+    #sidebar.collapsed {
+        width: 5rem;
+    }
+
+    #sidebar.collapsed .sidebar-text,
+    #sidebar.collapsed details summary span:last-child,
+    #sidebar.collapsed .sidebar-header-text,
+    #sidebar.collapsed .sidebar-section-label {
+        display: none;
+    }
+
+    #sidebar.collapsed nav {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    #sidebar.collapsed summary {
+        justify-content: center;
+    }
+
+    #sidebar.collapsed summary .material-symbols-outlined:last-child {
+        display: none;
+    }
+
+    #sidebar.collapsed .pl-11 {
+        padding-left: 0.75rem;
+    }
+}
+
+@media (max-width: 1023px) {
+    #sidebar.mobile-hidden {
+        transform: translateX(-100%);
+    }
+
+    #sidebar-overlay.active {
+        display: block;
+    }
+}
