@@ -5,7 +5,8 @@
                 <span class="material-symbols-outlined text-xl">school</span>
             </div>
             <div>
-                <h1 class="text-navy-custom dark:text-slate-100 text-xl font-bold leading-tight">{{ $brand['name'] }}</h1>
+                <h1 class="text-navy-custom dark:text-slate-100 text-xl font-bold leading-tight">{{ $brand['name'] }}
+                </h1>
                 <p class="text-xs text-slate-500 dark:text-slate-400">{{ $brand['tagline'] }}</p>
             </div>
         </div>
