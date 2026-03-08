@@ -4,7 +4,8 @@
             id="prestasi">
             <div class="flex items-center justify-between gap-3 mb-6">
                 <h2 class="text-2xl font-bold text-navy-custom dark:text-white">{{ $prestasi['title'] }}</h2>
-                <a class="inline-flex items-center gap-1 text-primary text-sm font-bold hover:underline" href="{{ $prestasi['listUrl'] }}">
+                <a class="inline-flex items-center gap-1 text-primary text-sm font-bold hover:underline"
+                    href="{{ $prestasi['listUrl'] }}">
                     Lihat Semua
                     <span class="material-symbols-outlined text-base">arrow_forward</span>
                 </a>
@@ -32,7 +33,8 @@
             id="informasi">
             <div class="flex items-center justify-between gap-3 mb-6">
                 <h2 class="text-2xl font-bold text-navy-custom dark:text-white">{{ $informasi['title'] }}</h2>
-                <a class="inline-flex items-center gap-1 text-primary text-sm font-bold hover:underline" href="{{ $informasi['listUrl'] }}">
+                <a class="inline-flex items-center gap-1 text-primary text-sm font-bold hover:underline"
+                    href="{{ $informasi['listUrl'] }}">
                     Lihat Semua
                     <span class="material-symbols-outlined text-base">arrow_forward</span>
                 </a>

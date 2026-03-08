@@ -5,7 +5,8 @@
 
 @section('content')
     <main class="max-w-6xl mx-auto px-6 md:px-8 py-10 md:py-14">
-        <a class="inline-flex items-center gap-1 text-primary text-sm font-bold hover:underline" href="{{ route('depan.index') . '#' . $section }}">
+        <a class="inline-flex items-center gap-1 text-primary text-sm font-bold hover:underline"
+            href="{{ route('depan.index') . '#' . $section }}">
             <span class="material-symbols-outlined text-base">arrow_back</span>
             Kembali ke Beranda
         </a>
@@ -17,12 +18,16 @@
 
         <section class="mt-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
             @foreach ($paginatedItems as $item)
-                <article class="rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/40">
+                <article
+                    class="rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/40">
                     <img alt="{{ $item['title'] }}" class="w-full h-48 object-cover" src="{{ $item['thumbnail'] }}" />
                     <div class="p-5">
-                        <h2 class="text-lg font-bold text-slate-900 dark:text-slate-100 leading-snug">{{ $item['title'] }}</h2>
-                        <p class="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">{{ $item['summary'] }}</p>
-                        <a class="inline-flex items-center gap-1 text-primary text-sm font-bold mt-4 hover:underline" href="{{ $item['url'] }}">
+                        <h2 class="text-lg font-bold text-slate-900 dark:text-slate-100 leading-snug">{{ $item['title'] }}
+                        </h2>
+                        <p class="mt-2 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">{{ $item['summary'] }}
+                        </p>
+                        <a class="inline-flex items-center gap-1 text-primary text-sm font-bold mt-4 hover:underline"
+                            href="{{ $item['url'] }}">
                             Detail
                             <span class="material-symbols-outlined text-base">arrow_forward</span>
                         </a>

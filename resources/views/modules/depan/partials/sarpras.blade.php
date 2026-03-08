@@ -2,7 +2,8 @@
     <div class="rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800/40 p-6">
         <div class="flex items-center justify-between gap-3 mb-6">
             <h2 class="text-2xl font-bold text-navy-custom dark:text-white">{{ $sarpras['title'] }}</h2>
-            <a class="inline-flex items-center gap-1 text-primary text-sm font-bold hover:underline" href="{{ $sarpras['listUrl'] }}">
+            <a class="inline-flex items-center gap-1 text-primary text-sm font-bold hover:underline"
+                href="{{ $sarpras['listUrl'] }}">
                 Lihat Semua
                 <span class="material-symbols-outlined text-base">arrow_forward</span>
             </a>

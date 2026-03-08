@@ -27,7 +27,8 @@
                     </a>
 
                     <div class="pt-4">
-                        <p class="px-3 text-[10px] font-bold uppercase tracking-wider text-slate-500 mb-2 sidebar-section-label">
+                        <p
+                            class="px-3 text-[10px] font-bold uppercase tracking-wider text-slate-500 mb-2 sidebar-section-label">
                             Halaman Depan</p>
                         <details class="group">
                             <summary
@@ -183,9 +184,11 @@
         </aside>
 
         <div class="flex-1 flex flex-col min-w-0" id="main-wrapper">
-            <header class="sticky top-0 z-40 bg-white border-b border-slate-200 px-6 py-3 flex items-center justify-between">
+            <header
+                class="sticky top-0 z-40 bg-white border-b border-slate-200 px-6 py-3 flex items-center justify-between">
                 <div class="flex items-center gap-4 flex-1">
-                    <button class="text-slate-500 p-2 hover:bg-slate-100 rounded-lg transition-colors" id="sidebar-toggle">
+                    <button class="text-slate-500 p-2 hover:bg-slate-100 rounded-lg transition-colors"
+                        id="sidebar-toggle">
                         <span class="material-symbols-outlined">menu</span>
                     </button>
                     <div class="max-w-md w-full relative">
@@ -319,7 +322,8 @@
                             <div class="p-3 bg-blue-50 text-blue-600 rounded-lg">
                                 <span class="material-symbols-outlined">group</span>
                             </div>
-                            <span class="text-xs font-bold text-green-600 bg-green-50 px-2 py-0.5 rounded-full">+2.4%</span>
+                            <span
+                                class="text-xs font-bold text-green-600 bg-green-50 px-2 py-0.5 rounded-full">+2.4%</span>
                         </div>
                         <div class="mt-4">
                             <p class="text-slate-500 text-sm font-medium">Total Siswa</p>
@@ -332,7 +336,8 @@
                             <div class="p-3 bg-orange-50 text-primary rounded-lg">
                                 <span class="material-symbols-outlined">person_pin</span>
                             </div>
-                            <span class="text-xs font-bold text-slate-400 bg-slate-50 px-2 py-0.5 rounded-full">Stabil</span>
+                            <span
+                                class="text-xs font-bold text-slate-400 bg-slate-50 px-2 py-0.5 rounded-full">Stabil</span>
                         </div>
                         <div class="mt-4">
                             <p class="text-slate-500 text-sm font-medium">Total Guru</p>
@@ -345,7 +350,8 @@
                             <div class="p-3 bg-purple-50 text-purple-600 rounded-lg">
                                 <span class="material-symbols-outlined">campaign</span>
                             </div>
-                            <span class="text-xs font-bold text-purple-600 bg-purple-50 px-2 py-0.5 rounded-full">Baru</span>
+                            <span
+                                class="text-xs font-bold text-purple-600 bg-purple-50 px-2 py-0.5 rounded-full">Baru</span>
                         </div>
                         <div class="mt-4">
                             <p class="text-slate-500 text-sm font-medium">Pengumuman</p>
