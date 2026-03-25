@@ -16,7 +16,19 @@
 </head>
 
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased font-display">
-    @yield('content')
+    <div class="flex min-h-screen">
+        @include('modules.admin.partials.sidebar')
+
+        <div class="flex-1 flex flex-col min-w-0" id="main-wrapper">
+            @include('modules.admin.partials.header')
+
+            <main class="flex-1 p-6 space-y-8 overflow-y-auto">
+                @yield('admin_content')
+            </main>
+
+            @include('modules.admin.partials.footer')
+        </div>
+    </div>
 </body>
 
 </html>
