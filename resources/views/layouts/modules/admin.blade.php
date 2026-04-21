@@ -12,7 +12,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
+
     @stack('head')
+    @livewireStyles()
 </head>
 
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased font-display">
@@ -29,6 +31,7 @@
             @include('modules.admin.partials.footer')
         </div>
     </div>
+    @livewireScripts()
 </body>
 
 </html>
