@@ -12,19 +12,20 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
-
     @stack('head')
     @livewireStyles()
 </head>
 
-<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased font-display">
-    <div class="flex min-h-screen">
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased font-display overflow-hidden">
+    <div class="flex h-screen overflow-hidden">
         @include('modules.admin.partials.sidebar')
 
-        <div class="flex-1 flex flex-col min-w-0" id="main-wrapper">
+        <div class="flex-1 flex flex-col min-w-0 h-screen overflow-hidden" id="main-wrapper">
             @include('modules.admin.partials.header')
 
             <main class="flex-1 p-6 space-y-8 overflow-y-auto">
+                {{ $slot ?? '' }}
                 @yield('admin_content')
             </main>
 

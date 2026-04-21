@@ -8,6 +8,49 @@
     --color-background-dark: #221610;
 }
 
+.sidebar-link,
+.sidebar-group>summary {
+    color: rgb(255 255 255 / 0.9);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sidebar-link:hover,
+.sidebar-group>summary:hover,
+.sidebar-group.open>summary {
+    background: rgb(255 255 255 / 0.05);
+}
+
+.sidebar-link.active {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.sidebar-icon {
+    color: #94a3b8;
+    transition: color 0.2s ease;
+}
+
+.sidebar-link.active .sidebar-icon,
+.sidebar-group.open>summary .sidebar-icon,
+.sidebar-sublink.active {
+    color: #fff;
+}
+
+.sidebar-sublink {
+    display: block;
+    padding-block: 0.5rem;
+    color: #94a3b8;
+    transition: color 0.2s ease;
+}
+
+.sidebar-sublink:hover {
+    color: var(--color-primary);
+}
+
+.sidebar-sublink.active {
+    font-weight: 600;
+}
+
 .sidebar-scroll::-webkit-scrollbar {
     width: 4px;
 }
