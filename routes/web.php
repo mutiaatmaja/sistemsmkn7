@@ -7,19 +7,22 @@ require __DIR__.'/modules/akademis.php';
 require __DIR__.'/modules/keuangan.php';
 require __DIR__.'/modules/pengaturan.php';
 
-$baseDomain = env('APP_BASE_DOMAIN', 'smkn7ptk.sch.id');
+$baseDomain = (string) env('APP_BASE_DOMAIN', 'smkn7ptk.sch.id');
+$baseDomain = preg_replace('#^https?://#', '', $baseDomain);
+$baseDomain = trim((string) $baseDomain, " \t\n\r\0\x0B.");
 $isLocal = app()->environment(['local', 'development', 'testing']);
+
 
 $mapModule = function (string $slug, string $name, string $routeFile) use ($baseDomain, $isLocal): void {
 	$registrar = Route::middleware(['web'])->name($name.'.');
 
 	if ($isLocal) {
 		$registrar->prefix($slug)->group(base_path($routeFile));
-
-		return;
 	}
 
-	$registrar->domain("{$slug}.{$baseDomain}")->group(base_path($routeFile));
+	if ($baseDomain !== '') {
+		$registrar->domain("{$slug}.{$baseDomain}")->group(base_path($routeFile));
+	}
 };
 
 $mapModule('admin', 'admin', 'routes/modules/admin.php');
