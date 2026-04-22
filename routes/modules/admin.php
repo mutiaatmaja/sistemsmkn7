@@ -2,8 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::prefix('admin')->name('admin.')->group(function () {
-    Route::view('/', 'modules.admin.dashboard')->name('dashboard');
-    Route::livewire('/settings', 'pages::admin.setting')->name('settings');
-
-});
+Route::livewire('/', 'pages::admin.index')->name('index');
+Route::view('/dashboard', 'modules.admin.dashboard')->name('dashboard');
+Route::livewire('/settings', 'pages::admin.setting')->name('settings');
