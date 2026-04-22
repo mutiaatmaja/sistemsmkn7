@@ -12,10 +12,8 @@
     <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
 
     <!-- Styles / Scripts -->
-    @if (file_exists(public_path('build/manifest.json')))
-        @include('partials.assets-from-manifest', [
-            'entries' => ['resources/css/app.css', 'resources/js/app.js'],
-        ])
+    @if (true)
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     @else
         <style>
             /*! tailwindcss v4.0.7 | MIT License | https://tailwindcss.com */
